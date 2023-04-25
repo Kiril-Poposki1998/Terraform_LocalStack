@@ -5,15 +5,15 @@ terraform {
       version = "4.64.0"
     }
   }
-  backend "s3" {
-    endpoint= "http://localhost:4566"
-    skip_credentials_validation = true
-    skip_metadata_api_check     = true
-    force_path_style            = true
-    bucket = "terraform"
-    key = "terraform.tfstate"
-    region = "us-east-1"
-  }
+  # backend "s3" {
+  #   endpoint= "http://localhost:4566"
+  #   skip_credentials_validation = true
+  #   skip_metadata_api_check     = true
+  #   force_path_style            = true
+  #   bucket = "terraform"
+  #   key = "terraform.tfstate"
+  #   region = "us-east-1"
+  # }
 }
 
 
